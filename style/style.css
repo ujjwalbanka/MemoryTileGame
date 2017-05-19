@@ -1,0 +1,63 @@
+.info-card {
+    float: left;
+	margin: 10px;
+	-webkit-perspective: 600px;
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border: 1px solid black;
+}
+
+.front {
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 1;
+}
+.front p {
+	    margin-top: 30%;
+    text-align: center;
+}
+
+.back {
+	padding: 20px;
+	padding-top: 0px;
+	width: 100px;
+	height: 100px;
+	color : #fff;
+	-webkit-transform: rotateY(-180deg);
+}
+.back p {
+	    margin-top: 50%;
+    text-align: center;
+}
+.info-card.clicked .front{
+	-webkit-transform: rotateY(180deg);
+}
+.info-card.clicked .back{
+	-webkit-transform: rotateY(0);
+}
+.red{
+	background: red;
+}
+.black{
+	background: black;
+}
+.green{
+	background: green;
+}
+.blue{
+	background: blue;
+}
+.card-image {
+width: 100%;
+height: 100%;
+}
+
+	
